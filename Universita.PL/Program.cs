@@ -33,7 +33,7 @@ builder.Services.AddScoped<IDocenteService, DocenteService>();
 builder.Services.AddScoped<IIscrittiService, IscrittiService>();
 builder.Services.AddScoped<ILezioneServices, LezioneService>();
 builder.Services.AddScoped<IStudenteService, StudenteService>();
-
+builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

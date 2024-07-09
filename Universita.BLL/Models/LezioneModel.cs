@@ -17,13 +17,13 @@ namespace Universita.BLL.Models
         public int Durata { get; set; }
         [ForeignKey("AulaId")]
         public required int AulaId { get; set; }
-        public virtual AulaModel? Aula { get; set; }
+        //public virtual AulaModel? Aula { get; set; }
         [ForeignKey("DocenteId")]
         public required int DocenteId { get; set; }
-        public virtual DocenteModel? Docente { get; set; }
+        //public virtual DocenteModel? Docente { get; set; }
         [ForeignKey("CorsoId")]
         public required int CorsoId { get; set; }
-        public virtual CorsoModel? Corso { get; set; }
+        //public virtual CorsoModel? Corso { get; set; }
 
     }
 }

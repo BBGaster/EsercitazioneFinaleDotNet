@@ -11,9 +11,9 @@ namespace Universita.BLL.Models
     {
         
         public int StudenteMatricola { get; set; } 
-        public StudenteModel Studente { get; set; }
+        public StudenteModel? Studente { get; set; }
 
         public int CorsoId { get; set; }
-        public CorsoModel Corso { get; set; }
+        public CorsoModel? Corso { get; set; }
     }
 }
