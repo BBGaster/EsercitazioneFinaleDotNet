@@ -8,7 +8,7 @@ using Universita.DAL.Repository.Interfaces;
 
 namespace Universita.DAL.Repository
 {
-    internal class AulaRepository :GenericRepository<Aula>, IAulaRepository
+    public class AulaRepository :GenericRepository<Aula>, IAulaRepository
     {
         public AulaRepository(UniversityDbContext context) : base (context)
         {

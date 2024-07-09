@@ -5,16 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Universita.DAL.Entityes
+namespace Universita.BLL.Models
 {
-    public class Iscritti
+    public class IscrittiModel
     {
-
         
         public int StudenteMatricola { get; set; } 
-        public Studente Studente { get; set; }
+        public StudenteModel Studente { get; set; }
 
         public int CorsoId { get; set; }
-        public Corso Corso { get; set; }
+        public CorsoModel Corso { get; set; }
     }
 }

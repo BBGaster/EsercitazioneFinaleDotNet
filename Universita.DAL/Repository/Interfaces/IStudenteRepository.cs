@@ -7,7 +7,7 @@ using Universita.DAL.Entityes;
 
 namespace Universita.DAL.Repository.Interfaces
 {
-    internal interface IStudenteRepository : IGenericRepository<Studente>
+    public interface IStudenteRepository : IGenericRepository<Studente>
     {
     }
 }

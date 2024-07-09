@@ -7,7 +7,7 @@ using Universita.DAL.Entityes;
 
 namespace Universita.DAL.Repository.Interfaces
 {
-    internal interface ICorsoRepository : IGenericRepository<Corso>
+    public interface ICorsoRepository : IGenericRepository<Corso>
     {
     }
 }

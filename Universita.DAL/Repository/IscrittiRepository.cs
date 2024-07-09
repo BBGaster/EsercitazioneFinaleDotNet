@@ -9,7 +9,7 @@ using Universita.DAL.Repository.Interfaces;
 
 namespace Universita.DAL.Repository
 {
-    internal class IscrittiRepository: GenericRepository<Iscritti>, IIscrittiRepository
+    public class IscrittiRepository: GenericRepository<Iscritti>, IIscrittiRepository
     {
         private readonly UniversityDbContext _context;
         private readonly DbSet<Iscritti> _dbSet;
@@ -30,6 +30,11 @@ namespace Universita.DAL.Repository
 
             _dbSet.Remove(iscritto);
             return _context.SaveChanges() > 0;
+        }
+
+        public List<Iscritti> GetByCorso(int corsoId)
+        {
+            return _dbSet.Where(i => i.CorsoId == corsoId).ToList();
         }
 
         public Iscritti GetById(int studenteMatricola, int corsoId)

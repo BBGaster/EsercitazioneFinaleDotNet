@@ -7,7 +7,7 @@ using Universita.DAL.Entityes;
 
 namespace Universita.DAL.Repository.Interfaces
 {
-    internal interface ILezioneRepository : IGenericRepository<Lezione>
+    public interface ILezioneRepository : IGenericRepository<Lezione>
     {
     }
 }
