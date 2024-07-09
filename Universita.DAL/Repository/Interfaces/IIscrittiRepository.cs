@@ -7,12 +7,11 @@ using Universita.DAL.Entityes;
 
 namespace Universita.DAL.Repository.Interfaces
 {
-    internal interface IIscrittiRepository
+    internal interface IIscrittiRepository : IGenericRepository<Iscritti>
     {
-        bool Create(Iscritti iscritto);
-        Iscritti Update(Iscritti iscritto);
+        
         bool Delete(int studenteMatricola, int corsoId);
-        IList<Iscritti> GetAll();
+        
         Iscritti GetById(int studenteMatricola, int corsoId);
     }
 }
